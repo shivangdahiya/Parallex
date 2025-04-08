@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 10px;
+
+}
+.container{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d ;
+    z-index: -1;
+
+}
+
+.back{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+.forward{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    top: -10%;
+    left: -100%;
+    z-index: -1;
+}
+.back{
+    transform: translateZ(-50px) scale(7);
+}
+.forward{
+    transform: translateZ(-30px)scale(3);
+}
+h1{
+    position: absolute;
+    color: rgb(12, 12, 13);
+    text-shadow:1px 2px 3px red ;
+    font-size: 4em;
+    top: 5rem;
+    
+}
+#secheading{
+    font-size: 2em;
+    padding-left: 2em;
+    padding-bottom: 1em;
+}
+section{
+    background-color: rgb(169, 153, 153);
+    color: black;   
+}
+.box{
+    position: relative;
+    background-attachment: fixed;
+    height: 300px;
+    width: 100%;
+    background-size: cover;
+    object-fit: cover;
+}
+#heading{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background-color: white;
+    font-size: 3em;
+    
+    
+    
+}
+#text{
+    color: white;
+    font-size: 1.5em;  
+    overflow: scroll;
+}
+.img1{
+    background-image: url(cricket.webp);
+}
+.img2{
+    background-image: url(riding3.jpg);
+}
+.img3{
+    background-image: url(para.jpg);
+}
+.para{
+    height: 200px;
+    overflow: scroll;
+}
